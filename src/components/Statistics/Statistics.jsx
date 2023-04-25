@@ -1,4 +1,4 @@
-// import css from './Statistics.module.css';
+import css from './Statistics.module.css';
 
 export default function Statistics({
   good,
@@ -9,12 +9,11 @@ export default function Statistics({
 }) {
   return (
     <>
-      <p>Statistics</p>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total:{total}</p>
-      <p>Positive feedback: {positivePercentage} </p>
+      <p className={css.text}>Good: {good}</p>
+      <p className={css.text}>Neutral: {neutral}</p>
+      <p className={css.text}>Bad: {bad}</p>
+      <p className={css.total}>Total:{total}</p>
+      <p className={css.positive}>Positive feedback: {positivePercentage} </p>
     </>
   );
 }
